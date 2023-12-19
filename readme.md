@@ -1,4 +1,4 @@
-# Algoritmo
+# Observaçoes
 
 - media-queries breakpoints: 
     - Mobile: (0-480)
