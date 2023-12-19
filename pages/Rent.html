@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Path: css/style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rent</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Rent</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h1>The region's best properties for sale are just a click away:</h1>
+        <form action="#" method="#">
+            <label for="localizacao">Location</label>
+            <select id="localizacao" name="localizacao">
+              <option value="" disabled selected>Select Location</option>
+              <option value="fingal">Figal</option>
+              <option value="dublin-city">Dublin</option>
+              <option value="south-dublin">South Dublin</option>
+              <option value="dun-laoghaire-rathdown">Dún Laoghaire/ Rathdown</option>
+            </select>
+        
+            <br>
+        
+            <label for="price">Price:</label>
+            <select id="price" name="price">
+              <option value="" disabled selected>Selecione o valor</option>
+              <option value="100000">Até $ 100.000</option> <!-- $ = euro -->
+              <option value="200000">R$ 100.000 - R$ 200.000</option> <!-- $ = euro -->
+              <option value="300000">R$ 200.000 - R$ 300.000</option> <!-- $ = euro -->
+            </select>
+        
+            <br>
+        
+            <label for="metros-quadrados">Metros Quadrados:</label>
+            <select id="metros-quadrados" name="metros-quadrados">
+              <option value="" disabled selected>Selecione os metros quadrados</option>
+              <option value="50">Até 50 m²</option> <!-- $ = inches -->
+              <option value="100">50 m² - 100 m²</option> <!-- $ = inches -->
+              <option value="150">100 m² - 150 m²</option> <!-- $ = inches -->
+            </select>
+        
+            <br>
+        
+            <input type="submit" value="Buscar">
+          </form>
+
+          <div id="carousel-container">
+            <div id="image-carousel">
+              <!-- Slide 1 -->
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <img class="slide-image" src="imagem1.jpg" alt="Imagem 1">
+                  <h3>Property 1</h3>
+                  <p>Price: R$ 200,000</p> <!-- $ = euro -->
+                  <p>Location: Figal</p> 
+                  <p>Size: xx inches</p> <!-- $ = inches -->
+                </div>
+              </div>
+        
+              <!-- Slide 2 -->
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <img class="slide-image" src="imagem2.jpg" alt="Imagem 2">
+                  <h3>Property  2</h3>
+                  <p>Preço: R$ 150,000</p> <!-- $ = euro -->
+                  <p>Localização: Dublin-City</p>
+                  <p>Size: xx inches</p> <!-- $ = inches -->
+                </div>
+              </div>
+        
+              <!-- Adicione mais slides conforme necessário -->
+        
+            </div>
+          </div>
+        
+
+    </section>
+    <footer id="footer">
+        <h3>Marcos Real Estate</h3>
+        <p>Let's hunt for your dream residence in Dublin</p>
+        <p><span>Entre em contato:</span> oi@marcosrealestate.com</p>
+        <p><span>Telefone:</span> (55) 5555-5555</p>
+    </footer>
+</body>
+</html>
