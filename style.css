@@ -1,8 +1,7 @@
-
 :root {
-    --primary: #1F2744;
-    --secondary: #73788C;
-    --text-tertiary: #69B99D;
+  --primary: #1F2744;
+  --secondary: #73788C;
+  --text-tertiary: #69B99D;
 }
 
 * {
@@ -14,7 +13,8 @@
 }
 
 
-body, html {
+body,
+html {
   height: 100vh;
   margin: 0;
 }
@@ -28,7 +28,7 @@ body {
 /* Menu Nav */
 
 .logo {
-  color:#69B99D;
+  color: #69B99D;
   text-decoration: none;
   font-size: 20px;
 }
@@ -75,7 +75,7 @@ header {
 
 .menu-nav a:hover::before {
   width: 100%;
-  color: var(--text-tertiary);  
+  color: var(--text-tertiary);
 }
 
 .menu-nav a:hover {
@@ -86,7 +86,7 @@ header {
 /* Description */
 
 section {
-  height: 60vh; 
+  height: 60vh;
   position: relative;
   flex-grow: 1;
 }
@@ -136,9 +136,9 @@ section {
 /* Footer */
 
 footer {
-  display: flex; 
+  display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   height: 10vh;
   background: #69B99D;
   opacity: 0.6;
@@ -152,7 +152,6 @@ footer p {
 }
 
 footer a {
-  margin-top: 10px;
   font-size: 1rem;
   color: var(--primary);
   font-weight: 400;
@@ -166,12 +165,13 @@ footer a:hover {
 
 #links-contact {
   margin-top: 0;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header, footer {
+header,
+footer {
   height: 75px;
 }
 
@@ -187,14 +187,14 @@ header, footer {
 
 /* Form */
 
- .container-form-rent {
+.container-form-rent {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center
- }
+}
 
- .container-form-rent h1 {
+.container-form-rent h1 {
   margin-top: 10px;
   font-size: 3rem;
   font-weight: 700;
@@ -203,7 +203,7 @@ header, footer {
   line-height: 50px;
 }
 
- .form-rent {
+.form-rent {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -249,26 +249,27 @@ header, footer {
 #image-carousel {
   margin-top: 20px;
   align-items: center;
-  display:inline-flex;
+  display: inline-flex;
   margin-left: 25%;
   gap: 20px;
-  
+
 }
 
 .slide-content {
   border: 1px solid #ccc;
   padding: 10px;
   margin-right: 10px;
-  box-shadow: 2px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+  box-shadow: 2px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-} 
+}
 
 .slide-content h3 {
   margin-top: 10px;
   font-size: 1.2rem;
 }
 
-.slide-content, p {
+.slide-content,
+p {
   font-size: 0.9rem;
 }
 
@@ -311,15 +312,52 @@ header, footer {
   font-weight: 350;
 }
 
-.button-about {
-  margin-top: 40px;
-  margin-left: 200px;
-  width: 400px;
-  border: 2px solid #69B99D;
-  padding: 5px;
+#about-subscription-form {
+  position: relative;
+  margin-left: 0;
+
+}
+
+#form_container {
+  position: absolute;
+  width: relative;
+  height: relative;
+  margin-top: 420px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 80px;
+}
+
+#form-about label {
+  padding: 2px;
+  margin-bottom: 1px;
+  margin-top: 1px;
   font-size: 0.9rem;
-  font-weight: 200px;
-  color: var(--text-tertiary);
-  background-color: transparent;
+  width: 300px;
+}
+
+#form-about input {
+  padding: 2px;
+  margin-bottom: 1px;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  margin-top: 1px;
+  font-size: 0.9rem;
+  width: 300px;
+}
+
+#form-about select {
+  padding: 2px;
+  margin-bottom: 1px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1px;
+  font-size: 0.9rem;
+  width: 300px;
+  align-self: center;
 }

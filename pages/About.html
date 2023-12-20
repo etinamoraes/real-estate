@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,100 @@
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600&family=Rubik:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600&family=Rubik:ital,wght@0,300;1,500&display=swap"
+        rel="stylesheet">
     <title>About</title>
 </head>
+
 <body>
     <header>
         <a href="../home.html" class="logo">MARCOS REAL ESTATE</a>
         <nav class="menu-nav">
-          <a href="../home.html">Home</a>
-          <a href="./Buy.html">Buy</a>
-          <a href="./Rent.html">Rent</a>
-          <a href="./About.html">About</a>
+            <a href="../home.html">Home</a>
+            <a href="./Buy.html">Buy</a>
+            <a href="./Rent.html">Rent</a>
+            <a href="./About.html">About</a>
         </nav>
-      </header>
+    </header>
     <section class="section-description-about">
         <h1 class="about-tittle">Let's hunt for your dream residence</h1>
-        <p class="about-description">Marcos, a leader in property rental and sales in Dublin, 
-        offers personalized and transparent solutions. Well-known in the local market, his company is distinguished for its 
-        excellence in customer service. If you're seeking properties in Dublin, reach out to Marcos for a reliable 
-        and effective partnership by clicking below.</p>
-        <button type="submit" class="button-about">Contact Us</button>
+        <p class="about-description">Marcos, a leader in property rental and sales in Dublin,
+            offers personalized and transparent solutions. Well-known in the local market, his company is distinguished
+            for its
+            excellence in customer service. If you're seeking properties in Dublin, reach out to Marcos for a reliable
+            and effective partnership by clicking below.</p>
     </section>
+
+    <div id="form_container">
+
+        <form id="form-about">
+            <table>
+                <tr>
+                    <td>
+                    <td>
+                        <p>Fill in the form to contact us:</p>
+                    </td>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" placeholder="Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">E-mail</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" placeholder="exemple@email.com">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="phone">Cellphone</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="phone" placeholder="Cellphone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="interest">Main interests</label>
+                    </td>
+                    <td>
+                        <select name="interest">
+                            <option value="" disabled selected>Select</option>
+                            <option value="apartment">Rent</option>
+                            <option value="house">Buy</option>
+                            <option value="garden">Sell</option>
+                            <option value="other">Other issues</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="submit" class="btn-rent-submit" value="Quero me inscrever">
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
     <footer id="footer">
         <p><span>Entre em contato:</span> oi@marcosrealestate.com</p>
         <div id="links-contact">
-          <a href="#">Linkedin</a>
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-      </footer>
+            <a href="#">Linkedin</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+    </footer>
 </body>
+
 </html>
