@@ -24,6 +24,7 @@ body {
   flex-direction: column;
 }
 
+/* Home */
 
 /* Menu Nav */
 
@@ -142,6 +143,7 @@ footer {
   height: 10vh;
   background: #69B99D;
   opacity: 0.6;
+  flex-shrink: 0
 }
 
 footer p {
@@ -360,4 +362,75 @@ form {
   font-size: 0.9rem;
   width: 300px;
   align-self: center;
+}
+
+/* Breakpoints smartphones */
+
+@media (max-width: 450px) {
+
+  /* Home */
+
+  .menu-nav {
+    display: none;
+  }
+
+  header {
+    padding-left: 30px;
+  }
+
+  .description-home h2 {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  body > img {
+    margin: 0;
+    opacity: 0.3;
+    height: 40%;
+  }
+
+  .description-home h1 {
+    max-width: 100%;
+  }
+
+  footer > p {
+    display: none;
+  }
+
+  footer > div { 
+    margin-top: 20px;
+  }
+
+  /* Rent Page */
+
+  .container-form-rent {
+    flex-direction: column;
+  }
+
+  .container-form-rent h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  form {
+    margin-left: 0;
+  }
+
+  section {
+    height: auto;
+  }
+}
+
+
+/* Breakpoints tablets */
+
+@media (min-width: 768px) and (max-width:1024px) {
+
+}
+
+
+/* Breakpoints Desktop */
+
+@media (max-width: 1024px) {
+
 }
